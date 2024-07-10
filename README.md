@@ -1,2 +1,2 @@
-# feub_cv
-Just my CV
+# Fabien Amann CV
+Just my CV in Vue 3 +  Tailwind CSS.
