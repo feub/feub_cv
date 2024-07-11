@@ -18,6 +18,7 @@ const props = defineProps({
 });
 
 const openToWork = ref(true);
+
 const showExp = ref(true);
 const showEdu = ref(false);
 
@@ -33,10 +34,13 @@ function onClickEdu() {
 </script>
 
 <template>
+  <!-- Banner -->
   <TopBanner :openToWork="openToWork" />
+
   <div class="container mx-auto max-w-6xl">
     <div class="grid sm:grid lg:grid-cols-3 gap-5 m-5">
-      <div class="space-y-4">
+      <!-- Sidebar -->
+      <sidebar class="space-y-4">
         <div class="relative flex items-start justify-between bg-white dark:bg-feub-secondary-dark rounded-xl p-3">
           <div class="flex items-start gap-3">
             <img class="size-16 rounded-full" src="/images/fabien_amann_li.jpg" alt="Fabien Amann" />
@@ -57,9 +61,10 @@ function onClickEdu() {
         <HardSkillsCard />
         <LanguagesCard />
         <ExtraCard />
-      </div>
+      </sidebar>
 
-      <div class="col-span-2">
+      <!-- Main -->
+      <main class="col-span-2">
         <div class="space-y-4">
           <AboutCard />
           <div class="bg-white dark:bg-feub-secondary-dark rounded-xl p-6">
@@ -85,7 +90,15 @@ function onClickEdu() {
           <ExperienceCard v-if="showExp" />
           <EducationCard v-if="showEdu" />
         </div>
-      </div>
+      </main>
     </div>
+
+    <!-- Footer -->
+    <footer class="static bottom-0 m-5 p-3 bg-white dark:bg-feub-secondary-dark text-feub-toned-down dark:text-gray-400 rounded-xl text-sm font-medium">
+        <div class="flex justify-between items-center">
+          <div>Ce site est en Vue 3 + Tailwind CSS</div>
+          <div>2024</div>
+        </div>
+       </footer>
   </div>
 </template>
