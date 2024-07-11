@@ -12,7 +12,7 @@ import { ArrowDownOnSquareIcon } from '@heroicons/vue/24/outline'
                     <ArrowDownOnSquareIcon class="size-6 text-feub-primary" />
                     <div class="text-sm">
                         <div class="text-feub-primary dark:text-white font-medium">
-                            <a href="#">Cliquer ici</a>
+                            <a href="/docs/CV_Fabien_Amann_2024.pdf" target="_blank">Cliquer ici</a>
                         </div>
                         <div class="text-gray-400">
                             PDF
