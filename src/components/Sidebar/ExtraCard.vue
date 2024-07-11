@@ -7,8 +7,8 @@ const hobbies = ref([
 </script>
 
 <template>
-    <div class="bg-white rounded-xl p-3">
-        <h2 class="font-bold text-xl mb-4">Extra-professionnel</h2>
+    <div class="bg-white dark:bg-feub-secondary-dark rounded-xl p-3">
+        <h2 class="font-bold text-xl mb-4 dark:text-white">Extra-professionnel</h2>
         <div class="flex flex-wrap">
             <span v-for="items in hobbies" :key="items"
                 class="rounded bg-feub-toned-down px-2 py-1 mr-2 mb-2 text-xs text-feub-primary hover:bg-feub-primary hover:text-white">

@@ -4,8 +4,8 @@ import { EnvelopeIcon, PhoneIcon, CursorArrowRippleIcon } from '@heroicons/vue/2
 </script>
 
 <template>
-    <div class="bg-white rounded-xl p-3">
-        <h2 class="font-bold text-xl mb-4">Contact</h2>
+    <div class="bg-white dark:bg-feub-secondary-dark rounded-xl p-3">
+        <h2 class="font-bold text-xl mb-4 dark:text-white">Contact</h2>
         <div class="space-y-4">
             <ContactCardItem>
                 <template #default>
