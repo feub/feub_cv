@@ -17,7 +17,7 @@ const props = defineProps({
   isDark: Boolean
 });
 
-const openToWork = ref(true);
+const openToWork = ref(false);
 
 const showExp = ref(true);
 const showEdu = ref(false);
