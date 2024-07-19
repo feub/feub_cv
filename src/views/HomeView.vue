@@ -40,7 +40,7 @@ function onClickEdu() {
   <div class="container mx-auto max-w-6xl">
     <div class="sm:grid lg:grid-cols-3 gap-5 m-5">
       <!-- Sidebar -->
-      <aside class="space-y-4">
+      <aside class="space-y-5 mb-4">
         <div class="relative flex items-start justify-between bg-white dark:bg-feub-secondary-dark rounded-xl p-3">
           <div class="flex items-start gap-3">
             <img class="size-16 rounded-full" src="/images/fabien_amann_li.jpg" alt="Fabien Amann" />
@@ -65,7 +65,7 @@ function onClickEdu() {
 
       <!-- Main -->
       <main class="col-span-2">
-        <div class="space-y-4">
+        <div class="space-y-5">
           <AboutCard />
           <div class="bg-white dark:bg-feub-secondary-dark rounded-xl p-6">
             <div class="flex justify-start gap-4">
@@ -75,7 +75,7 @@ function onClickEdu() {
                   <BriefcaseIcon class="size-5" />
                 </template>
                 <template #default>
-                  Experience professionnel
+                  Experience
                 </template>
               </ButtonWithIcon>
               <ButtonWithIcon @showPart="onClickEdu" :isShowing="showEdu"

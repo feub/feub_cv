@@ -1,6 +1,6 @@
 <script setup>
 import ContactCardItem from '@/components/Sidebar/ContactCardItem.vue';
-import { EnvelopeIcon, PhoneIcon, CursorArrowRippleIcon } from '@heroicons/vue/24/outline'
+import { EnvelopeIcon, PhoneIcon, CursorArrowRippleIcon, FolderOpenIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <template>
@@ -38,6 +38,17 @@ import { EnvelopeIcon, PhoneIcon, CursorArrowRippleIcon } from '@heroicons/vue/2
                 </template>
                 <template #bottom>
                     Website
+                </template>
+            </ContactCardItem>
+            <ContactCardItem>
+                <template #default>
+                    <FolderOpenIcon class="size-6 text-feub-primary" />
+                </template>
+                <template #top>
+                    <a href="https://github.com/feub" title="https://github.com/feub">https://github.com/feub</a>
+                </template>
+                <template #bottom>
+                    Github
                 </template>
             </ContactCardItem>
             <ContactCardItem>

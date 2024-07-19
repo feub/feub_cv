@@ -7,8 +7,8 @@ const props = defineProps({
 <template>
     <div>
         <button @click="$emit('showPart')"
-            :class="props.isShowing ? 'bg-feub-primary text-white dark:bg-feub-primary-dark hover:bg-feub-primary-dark/50 hover:text-feub-toned-down' : 'bg-feub-primary text-feub-toned-down hover:bg-feub-secondary'"
-            class="flex  items-center gap-2 font-medium rounded-md p-2">
+            :class="props.isShowing ? 'ring-feub-secondary ring-2 ring-offset-2 ring-offset-feub-secondary bg-feub-primary text-white dark:bg-feub-primary-dark hover:bg-feub-primary-dark/50' : 'bg-feub-primary text-feub-toned-down hover:bg-feub-secondary'"
+            class="flex items-center gap-2 font-medium rounded-md p-2">
             <span>
                 <slot name="icon"></slot>
             </span>
