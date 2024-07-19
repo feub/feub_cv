@@ -1,5 +1,6 @@
 <script setup>
 import TopBanner from '@/components/TopBanner.vue';
+import ProfileCard from '@/components/Sidebar/ProfileCard.vue';
 import ContactCard from '@/components/Sidebar/ContactCard.vue';
 import DownloadCvCard from '@/components/Sidebar/DownloadCvCard.vue';
 import HardSkillsCard from '@/components/Sidebar/HardSkillsCard.vue';
@@ -8,11 +9,15 @@ import LanguagesCard from '@/components/Sidebar/LanguagesCard.vue';
 import ExperienceCard from '@/components/ExperienceCard.vue';
 import EducationCard from '@/components/EducationCard.vue';
 import AboutCard from '@/components/AboutCard.vue';
-import ButtonWithIcon from '@/components/ButtonWithIcon.vue';
-import { BriefcaseIcon, MoonIcon, SunIcon, AcademicCapIcon } from '@heroicons/vue/24/outline';
+import ExpeduButtons from '@/components/ExpeduButtons.vue';
+import TheFooter from '@/components/TheFooter.vue';
 import { ref } from 'vue';
 
-defineEmits(['toggleDark']);
+const emit = defineEmits(['toggleDark', 'onClickExp', 'onClickEdu']);
+const toggleDarkEmit = () => {
+  emit('toggleDark')
+}
+
 const props = defineProps({
   isDark: Boolean
 });
@@ -41,21 +46,7 @@ function onClickEdu() {
     <div class="sm:grid lg:grid-cols-3 gap-5 m-5">
       <!-- Sidebar -->
       <aside class="space-y-5 mb-4">
-        <div class="relative flex items-start justify-between bg-white dark:bg-feub-secondary-dark rounded-xl p-3">
-          <div class="flex items-start gap-3">
-            <img class="size-16 rounded-full" src="/images/fabien_amann_li.jpg" alt="Fabien Amann" />
-            <div>
-              <h1 class="font-bold text-2xl text-feub-primary dark:text-white">Fabien Amann</h1>
-              <p class="text-gray-700 dark:text-gray-300">Développeur Web Full Stack</p>
-            </div>
-            <button class="absolute top-3 right-1">
-              <MoonIcon v-if="!props.isDark" @click="$emit('toggleDark')" class="mr-2 h-5 w-5 text-feub-primary"
-                aria-hidden="true" />
-              <SunIcon v-if="props.isDark" @click="$emit('toggleDark')" class="mr-2 h-5 w-5 text-feub-toned-down"
-                aria-hidden="true" />
-            </button>
-          </div>
-        </div>
+        <ProfileCard @toggleDark="toggleDarkEmit" />
         <ContactCard />
         <DownloadCvCard />
         <HardSkillsCard />
@@ -67,28 +58,7 @@ function onClickEdu() {
       <main class="col-span-2">
         <div class="space-y-5">
           <AboutCard />
-          <div class="bg-white dark:bg-feub-secondary-dark rounded-xl p-6">
-            <div class="flex justify-start gap-4">
-              <ButtonWithIcon @showPart="onClickExp" :isShowing="showExp"
-                :class="showExp ? 'text-white' : 'text-feub-primary'">
-                <template #icon>
-                  <BriefcaseIcon class="size-5" />
-                </template>
-                <template #default>
-                  Experience
-                </template>
-              </ButtonWithIcon>
-              <ButtonWithIcon @showPart="onClickEdu" :isShowing="showEdu"
-                :class="showEdu ? 'text-white' : 'text-feub-primary'">
-                <template #icon>
-                  <AcademicCapIcon class="size-5" />
-                </template>
-                <template #default>
-                  Education
-                </template>
-              </ButtonWithIcon>
-            </div>
-          </div>
+          <ExpeduButtons @onClickExp="onClickExp" @onClickEdu="onClickEdu" :showExp="showExp" :showEdu="showEdu" />
           <ExperienceCard v-if="showExp" />
           <EducationCard v-if="showEdu" />
         </div>
@@ -96,12 +66,6 @@ function onClickEdu() {
     </div>
 
     <!-- Footer -->
-    <footer
-      class="static bottom-0 m-5 p-3 bg-white dark:bg-feub-secondary-dark text-feub-toned-down dark:text-gray-400 rounded-xl text-sm font-medium">
-      <div class="flex justify-between items-center">
-        <div>Ce site est développé en Vue 3 + Tailwind CSS</div>
-        <div>2024</div>
-      </div>
-    </footer>
+    <TheFooter />
   </div>
 </template>
