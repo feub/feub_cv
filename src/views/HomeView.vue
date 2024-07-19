@@ -17,7 +17,7 @@ const props = defineProps({
   isDark: Boolean
 });
 
-const openToWork = ref(true);
+const openToWork = ref(false);
 
 const showExp = ref(true);
 const showEdu = ref(false);
@@ -38,7 +38,7 @@ function onClickEdu() {
   <TopBanner :openToWork="openToWork" />
 
   <div class="container mx-auto max-w-6xl">
-    <div class="grid sm:grid lg:grid-cols-3 gap-5 m-5">
+    <div class="sm:grid lg:grid-cols-3 gap-5 m-5">
       <!-- Sidebar -->
       <aside class="space-y-4">
         <div class="relative flex items-start justify-between bg-white dark:bg-feub-secondary-dark rounded-xl p-3">
@@ -69,7 +69,8 @@ function onClickEdu() {
           <AboutCard />
           <div class="bg-white dark:bg-feub-secondary-dark rounded-xl p-6">
             <div class="flex justify-start gap-4">
-              <ButtonWithIcon @showPart="onClickExp" :isShowing="showExp" :class="showExp ? 'text-white' : 'text-feub-primary'">
+              <ButtonWithIcon @showPart="onClickExp" :isShowing="showExp"
+                :class="showExp ? 'text-white' : 'text-feub-primary'">
                 <template #icon>
                   <BriefcaseIcon class="size-5" />
                 </template>
@@ -77,7 +78,8 @@ function onClickEdu() {
                   Experience professionnel
                 </template>
               </ButtonWithIcon>
-              <ButtonWithIcon @showPart="onClickEdu" :isShowing="showEdu" :class="showEdu ? 'text-white' : 'text-feub-primary'">
+              <ButtonWithIcon @showPart="onClickEdu" :isShowing="showEdu"
+                :class="showEdu ? 'text-white' : 'text-feub-primary'">
                 <template #icon>
                   <AcademicCapIcon class="size-5" />
                 </template>
@@ -94,7 +96,8 @@ function onClickEdu() {
     </div>
 
     <!-- Footer -->
-    <footer class="static bottom-0 m-5 p-3 bg-white dark:bg-feub-secondary-dark text-feub-toned-down dark:text-gray-400 rounded-xl text-sm font-medium">
+    <footer
+      class="static bottom-0 m-5 p-3 bg-white dark:bg-feub-secondary-dark text-feub-toned-down dark:text-gray-400 rounded-xl text-sm font-medium">
       <div class="flex justify-between items-center">
         <div>Ce site est développé en Vue 3 + Tailwind CSS</div>
         <div>2024</div>
