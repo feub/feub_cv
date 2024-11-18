@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 const hardSkills = ref([
-    'HTML', 'CSS', 'Javascript', 'PHP', 'Laravel', 'SQL', 'Vue 3', 'React', 'GIT', 'VS Code', 'Wordpess', 'Prestashop', 'Magento', 'Tailwind CSS', 'Bootstrap', 'Linux', 'Nginx', 'Apache', 'Photoshop', 'Lightroom', 'Davinci Resolve'
+    'Javascript', 'TypeScript', 'Node', 'Express', 'GraphQL', 'React', 'GIT', 'Docker', 'VS Code', 'PHP', 'Laravel', 'SQL', 'Vue 3', 'HTML', 'CSS', 'Wordpess', 'Prestashop', 'Magento', 'Tailwind CSS', 'Bootstrap', 'Linux', 'Nginx', 'Apache', 'Photoshop', 'Lightroom', 'Davinci Resolve'
 ]);
 </script>
 
