@@ -3,7 +3,7 @@ import { CalendarIcon } from '@heroicons/vue/24/outline';
 
 const edu = [
     {
-        name: 'Formation Concepteur Développeur d\'Applications (CDA)',
+        name: 'Formation Concepteur Développeur d\'Applications (Eq. Bac +3/4)',
         school: "Wild Code School",
         imageUrl:
             '/images/logo-wildcode.png',

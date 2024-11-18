@@ -15,14 +15,14 @@ import { ref } from 'vue';
 
 const emit = defineEmits(['toggleDark', 'onClickExp', 'onClickEdu']);
 const toggleDarkEmit = () => {
-  emit('toggleDark')
-}
+  emit('toggleDark');
+};
 
 const props = defineProps({
   isDark: Boolean
 });
 
-const openToWork = ref(false);
+const openToWork = ref(true);
 
 const showExp = ref(true);
 const showEdu = ref(false);
