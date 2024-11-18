@@ -1,7 +1,14 @@
 <script setup>
-import { CalendarIcon } from '@heroicons/vue/24/outline'
+import { CalendarIcon } from '@heroicons/vue/24/outline';
 
 const edu = [
+    {
+        name: 'Formation Concepteur Développeur d\'Applications (CDA)',
+        school: "Wild Code School",
+        imageUrl:
+            '/images/logo-wildcode.png',
+        period: '2024',
+    },
     {
         name: 'DUT I.S.I. (Informatique et Systèmes Industriels)',
         school: "Université H. Poincaré Nancy I, St-Dié (88)",
@@ -16,7 +23,7 @@ const edu = [
             '/images/logo-malraux.png',
         period: '1990-1995',
     },
-]
+];
 </script>
 
 <template>
