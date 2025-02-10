@@ -3,11 +3,11 @@ import { CalendarIcon } from '@heroicons/vue/24/outline';
 
 const edu = [
     {
-        name: 'Formation Concepteur Développeur d\'Applications (Eq. Bac +3/4)',
+        name: 'Certification Concepteur Développeur d\'Applications - RNCP Niveau 6 (éq. Bac +3/4)',
         school: "Wild Code School",
         imageUrl:
             '/images/logo-wildcode.png',
-        period: '2024',
+        period: '2024-2025',
     },
     {
         name: 'DUT I.S.I. (Informatique et Systèmes Industriels)',

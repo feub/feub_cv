@@ -18,7 +18,7 @@ import { EnvelopeIcon, PhoneIcon, CursorArrowRippleIcon, FolderOpenIcon } from '
                     Email
                 </template>
             </ContactCardItem>
-            <ContactCardItem>
+            <!-- <ContactCardItem>
                 <template #default>
                     <PhoneIcon class="size-6 text-feub-primary" />
                 </template>
@@ -28,13 +28,13 @@ import { EnvelopeIcon, PhoneIcon, CursorArrowRippleIcon, FolderOpenIcon } from '
                 <template #bottom>
                     Téléphone
                 </template>
-            </ContactCardItem>
+            </ContactCardItem> -->
             <ContactCardItem>
                 <template #default>
                     <CursorArrowRippleIcon class="size-6 text-feub-primary" />
                 </template>
                 <template #top>
-                    <a href="https://fabienamann.me" title="fabienamann.me">fabienamann.me</a>
+                    <a href="https://fabienamann.dev" title="fabienamann.dev">fabienamann.dev</a>
                 </template>
                 <template #bottom>
                     Website
