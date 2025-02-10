@@ -14,7 +14,7 @@ const jobs = [
     {
         name: 'expat.com',
         location: 'Île Maurice',
-        desc: "<ul class='list-disc ml-6'><li>Création et développement du module Événements</li><li>Développements PHP divers</li></ul>",
+        desc: "<ul class='list-disc ml-6'><li>Conception et développement du module Événements</li><li>Développements PHP divers</li></ul>",
         role: 'Développeur Full Stack',
         imageUrl:
             '/images/logo-expat.png',

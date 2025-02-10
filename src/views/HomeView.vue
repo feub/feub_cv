@@ -8,6 +8,7 @@ import ExtraCard from '@/components/Sidebar/ExtraCard.vue';
 import LanguagesCard from '@/components/Sidebar/LanguagesCard.vue';
 import ExperienceCard from '@/components/ExperienceCard.vue';
 import EducationCard from '@/components/EducationCard.vue';
+import ProjectsCard from '@/components/ProjectsCard.vue';
 import AboutCard from '@/components/AboutCard.vue';
 import ExpeduButtons from '@/components/ExpeduButtons.vue';
 import TheFooter from '@/components/TheFooter.vue';
@@ -61,6 +62,10 @@ function onClickEdu() {
           <ExpeduButtons @onClickExp="onClickExp" @onClickEdu="onClickEdu" :showExp="showExp" :showEdu="showEdu" />
           <ExperienceCard v-if="showExp" />
           <EducationCard v-if="showEdu" />
+        </div>
+
+        <div class="space-y-5">
+          <ProjectsCard />
         </div>
       </main>
     </div>
