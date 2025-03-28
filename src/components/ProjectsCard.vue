@@ -11,13 +11,29 @@ const projects_recent = [
         githubLink: 'https://github.com/WildCodeSchool-CDA-FT-2024-09/JS-CDA-Projet-2-Team-D'
     },
     {
-        name: 'In My Pantry',
-        description: "Projet personnel très récent en React Native de gestion de garde-manger/frigo/buanderie, pour ne plus jamais être à court de vos aliments et produits préférés ! ",
-        technos: 'React Native (with Expo), SQLite',
-        logoUrl: '/images/in-my-pantry-logo.png',
-        imageUrl: '/images/in-my-pantry-screenshot2.jpg',
-        githubLink: 'https://github.com/feub/in-my-pantry'
+        name: 'LibTrack (API)',
+        description: "Projet personnel d'une API (Symfony) de gestion de collection musicale sur supports physiques (CD, vinyles, etc.) avec un client mobile (React Native) qui permet notamment de scanner les codes barre des supports physiques pour une recherche (API MusicBrainz) et un ajout rapide.",
+        technos: 'Symfony 7, MySQL',
+        logoUrl: '/images/libtrack-native-logo.png',
+        imageUrl: '/images/libtrack-sy.png',
+        githubLink: 'https://github.com/feub/libtrack-sy'
     },
+    {
+        name: 'LibTrack Scanner (client mobile)',
+        description: "Projet personnel d'une API (Symfony) de gestion de collection musicale sur supports physiques (CD, vinyles, etc.) avec un client mobile (React Native) qui permet notamment de scanner les codes barre des supports physiques pour une recherche (API MusicBrainz) et un ajout rapide.",
+        technos: 'React Native (with Expo)',
+        logoUrl: '/images/libtrack-native-logo.png',
+        imageUrl: '/images/libtrack-native.jpg',
+        githubLink: 'https://github.com/feub/libtrack-react-native'
+    },
+    // {
+    //     name: 'In My Pantry',
+    //     description: "Projet personnel React Native de gestion de garde-manger/frigo/buanderie, pour ne plus jamais être à court de vos aliments et produits préférés ! ",
+    //     technos: 'React Native (with Expo), SQLite',
+    //     logoUrl: '/images/in-my-pantry-logo.png',
+    //     imageUrl: '/images/in-my-pantry-screenshot2.jpg',
+    //     githubLink: 'https://github.com/feub/in-my-pantry'
+    // },
     {
         name: 'Ce site CV',
         description: "Il s'agit tout bonnement de ce site. Son code est disponible sur GitHub (lien ci-dessous). Il s'agit d'un site statique en Vue.js + Tailwind, facilement personnalisable, avec mode clair/sombre 🌞 🌚",
