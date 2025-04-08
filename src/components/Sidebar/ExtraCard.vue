@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 const hobbies = ref([
-    'Photo', 'Vidéo', 'Trail', 'Nature', 'Environnement', 'Ecologie', 'Musculation', 'Yoga', 'Méditation', 'Lecture', 'Cinéma', 'Musique', 'Art'
+    'Lecture', 'Cinéma', 'Musique', 'Art', 'Musculation', 'Trail', 'Nature', 'Environnement', 'Ecologie', 'Yoga', 'Méditation', 'Photo', 'Vidéo', 
 ]);
 </script>
 

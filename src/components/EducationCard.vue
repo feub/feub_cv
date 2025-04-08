@@ -3,7 +3,7 @@ import { CalendarIcon } from '@heroicons/vue/24/outline';
 
 const edu = [
     {
-        name: 'Certification Concepteur Développeur d\'Applications - RNCP Niveau 6 (éq. Bac +3/4)',
+        name: 'Titre Concepteur Développeur d\'Applications - RNCP 6 (Bac +3/4)',
         school: "Wild Code School",
         imageUrl:
             '/images/logo-wildcode.png',
